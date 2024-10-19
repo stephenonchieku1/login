@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+
+    <form  class="my-form">
+        <div class="input_wrapper">
+            <input type="email" id="email" name="email" class="input_field" placeholder=" Enter your email" required>
+            <label for="email" class="input_label">Email</label>
+
+        </div>
+        <div class="input_wrapper">
+            <input 
+             id="password"   type="password" class="input_field"
+             placeholder=" your password"
+             required
+             title="Minimum 8 characters atleast 1 alphabet ,1 number and 1 symbol"
+             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+             >
+             <label for="password" class="input_label">Password</label>
+        </div>
+        <button type="submit" class="my-form_button">
+            LOGIN
+
+        </button>
+
+        <div class="socials-row">
+            <a href="#"  title="use google">
+                
+                Login with Google
+            </a>
+        </div>
+        <div class="my-form_actions">
+            <div class="my-form-row">
+                Don't have  an account?
+              <a  href="#"  title="create an Account"> Sign up</a>          
+            </div>
+
+        </div>
+
+    </form>
+      
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
